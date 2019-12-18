@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usefonttheme[onlymath]{serif}
 
+
 \usepackage{listings}
 % Configura o listings
 \lstset{
@@ -19,7 +20,6 @@
  fontadjust=true,
  basewidth=0.5em
 }
-
 
 \usetheme{lthn}
 \setbeamercolor*{normal text}{fg=black}
@@ -40,10 +40,16 @@
 \titlepage
 \end{frame}
 
+% Mudo o Table of Contents (TOC) para tirar enumerate das sections
+% e colocar números nas subsections
+\setbeamertemplate{section in toc}[ball unnumbered]
+%\setbeamertemplate{subsection in toc}%{\inserttocsectionnumber}
+\setbeamertemplate{subsection in toc}{\hspace*{2em}\inserttocsubsectionnumber.~\inserttocsubsection\par}
+
 %-------------------------------------------------
 \begin{frame}
-  \frametitle{Summary}
-  \tableofcontents%[pausesections]
+  \frametitle{Sumário}
+  \tableofcontents[]%[pausesections]
 \end{frame}
 
 
@@ -68,12 +74,12 @@
   \item Duração de uma semana (segunda até meio-dia de sexta-feira)
   \end{itemize}
   Formato:
-  \begin{enumerate}
+  \begin{itemize}
   \item Apresentações
   \item Visita técnica às instalações do reator HANARO
   \item Uma seção prática: uso do software \textit{VG Studio}\textcopyright
   \item Seção de posters
-  \end{enumerate}
+  \end{itemize}
 
 \end{frame}
 
