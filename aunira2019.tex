@@ -33,6 +33,16 @@
   \par
   Serviço de Tecnologia de Reatores - CDTN/CNEN}
 
+
+
+% Tentativa de mudar o tamanho das fontes nas referências
+\setbeamerfont{bibliography item}{size=\footnotesize}
+\setbeamerfont{bibliography entry author}{size=\footnotesize}
+\setbeamerfont{bibliography entry title}{size=\footnotesize}
+\setbeamerfont{bibliography entry location}{size=\footnotesize}
+\setbeamerfont{bibliography entry note}{size=\footnotesize}
+
+
 \begin{document}
 
 %-------------------------------------------------
@@ -423,12 +433,14 @@
 \section{Perspectivas de Neutrongrafia no TRIGA IPR-R1}
 %-------------------------------------------------
 \begin{frame}
-  \frametitle{Por quê?}
+  \frametitle{Perspectivas de Neutrongrafia no TRIGA IPR-R1}
+  \framesubtitle{Por quê?}
   \begin{enumerate}
-  \item Plano DIRETOR 2019-2022\cite{PD2019};%\cite{Antonella2002};
-  \item Hybrid fusion-fission system\cite{Antonella2003};
-  \item ADS simulations with Thorium and Uranium\cite{Wilson2017};
-    \end{enumerate}
+  \item Plano DIRETOR 2019-2022: expansão do uso do reator TRIGA;
+  \item Estratégia de sobrevivência: maior uso do reator $\rightarrow$ maior importância da instituição;
+  \item Neutrongrafia/Imageamento por nêutrons: área de pesquisas/serviços \textbf{ativa} e em relativa expansão;%\pause (demonstrado pelo interesse da AIEA no tema)
+  \item Oportunidades de pesquisa, acadêmicas, de serviços e de colaboração institucional.
+  \end{enumerate}
 %    \vspace{10px}
 %  \textbf{Algo aqui?}
 %    \begin{itemize}
@@ -436,59 +448,55 @@
 %    \end{itemize}
 \end{frame}
 
-
-\subsection{Sistema de neutrongrafia de baixo custo}
 %-------------------------------------------------
-\begin{frame}[fragile] % Coloca isso no frame que tem verbatim
-  \frametitle{Justificativa}
-  \framesubtitle{Plano estratégico do CDTN}
-%    \alert{Fidelity on the simulation of nuclear systems}\\
-%    \vspace{10px}
-  \begin{center}
-  Zirconium hydride: the pin modelled is actually a TRIGA fuel element.\\
-\begin{verbatim}
-  Fatal error in function OTFSabScattering:
-  Energy grids differ in OTF S(a,b) interpolation
-  Simulation aborted.
-\end{verbatim}
-
-On file \texttt{otfsabscattering.c} we get:
-
-\begin{verbatim}
-/* NOTE: tää on kohtuullisen harvinainen sirontalaki, johon */
-/* törmää esim. h/zr ja zr/h -kirjastoissa. Ei ole kunnolla */
-/* testattu. */
-\end{verbatim}
-  
-  \end{center}
+\begin{frame}
+  \frametitle{Perspectivas de Neutrongrafia no TRIGA IPR-R1}
+  \framesubtitle{Não re-inventar a roda}
+  \begin{enumerate}
+  \item Há experiência anterior no CDTN com neutrongrafia ainda por filmes\cite{Antonella2002,Antonella2003};
+  \item Há experiência \textbf{recente} publicada sobre um sistema completo de imageamento por nêutrons\cite{Wilson2017}; %Colorado School of Mines
+  \item Há experiência \textbf{recente} com equipamentos de baixo custo para neutrongrafia e informações disponíveis\cite{Schillinger2019,Turkoglu2013};
+    \end{enumerate}
 \end{frame}
 
-% END SUBSECTION ----------------------------------
-
-
+%-------------------------------------------------
+\begin{frame}
+  \frametitle{Perspectivas de Neutrongrafia no TRIGA IPR-R1}
+  \framesubtitle{Não re-inventar a roda}
+  \begin{enumerate}
+  \item Há experiência anterior no CDTN com neutrongrafia ainda por filmes\cite{Antonella2002,Antonella2003};
+  \item Há experiência \textbf{recente} publicada sobre um sistema completo de imageamento por nêutrons\cite{Wilson2017}; %Colorado School of Mines
+  \item Há experiência \textbf{recente} com equipamentos de baixo custo para neutrongrafia e informações disponíveis\cite{Schillinger2019,Turkoglu2013};
+    \end{enumerate}
+\end{frame}
 
 
 \section{Conclusões}
 %-------------------------------------------------
-% Futuras participações no AUNIRA
-\begin{frame}
-  \frametitle{Perspectivas para o TRIGA IPR-R1}
-  \framesubtitle{Teste}
-  \begin{table}%[htb!]
-    \caption{Computational time}
-    \label{time}
-    \centering
-    \vspace{0.5cm}
-    \begin{tabular}{l|r}\hline   
-      Case & Computational time\\ \hline
-      Case 1 (GANEX + Th) & $194:18:44 $\\ \hline
-      Case 2 (GANEX + U) & $287:25:16 $\\ \hline
-      Case 3 (UREX + Th) & $208:41:45 $\\ \hline
-      Case 4 (UREX + U) & $300:43:54 $\\ \hline
-    \end{tabular}
-  \end{table}
-  
+\begin{frame}[fragile] % Coloca isso no frame que tem verbatim
+  \frametitle{Conclusões}
+  \begin{itemize}
+  \item É possível retomar o imageamento por nêutrons no TRIGA IPR-R1;
+  \item Talvez não seja viável $\rightarrow$ mas só é possível sabê-lo através de estudos;
+  \item O imageamento por nêutrons pode ser uma nova e sólida utilização do reator com implicações diretas no futuro do CDTN.
+  \end{itemize}
 \end{frame}
+
+\subsection{Estratégia de curto prazo}
+\begin{frame}
+  \frametitle{Estratégia de curto prazo}
+  \framesubtitle{2020?}
+  \begin{enumerate}
+  \item Reunir os interessados e fazer o curso de neutrongrafia da AIEA (citado anteriormente);
+  \item Estabelecer/Consolidar contatos com instituições com experiência;
+  \item Estudos preliminares (cálculos/simulações) com os equipamentos já existentes hoje: obter fluxo com o atual extrator de nêutrons, estudar eventuais mudanças no extrator executáveis na casa, etc.
+  \item Contactar eventuais clientes $\rightarrow$ verificar demanda por imageamento por nêutrons.
+  \item \alert{Estudar como blindar um feixe de nêutrons vertical!} \pause \cite{Wilson2017}
+  \end{enumerate}
+\end{frame}
+
+% END SUBSECTION ----------------------------------
+
 
 %-------------------------------------------------
 % FIM
@@ -505,7 +513,8 @@ On file \texttt{otfsabscattering.c} we get:
 % References
 \begin{frame}
     \frametitle{References}
-    \bibliographystyle{apalike}
+    %\bibliographystyle{apalike}
+    \bibliographystyle{apacite}
     \bibliography{aunira2019}
 \end{frame}
 
